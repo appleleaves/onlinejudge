@@ -1,0 +1,28 @@
+#ifndef _MY_STACK_H
+#define _MY_STACK_H
+const LEN=10;
+struct my_stack{
+	int size;
+	int top;
+	int s[LEN];
+};
+void stack_push(my_stack S,int x);
+int stack_pop(my_stack S);
+
+// The capacity of the stack
+int stack_capacity(my_stack S);
+
+// Current available size of the stack
+int stack_size(my_stack S);
+
+
+/*
+ * return 0/1 to check if stack is empty or full
+ * 0 - No
+ * 1 - Yes
+ */
+int stack_is_empty(my_stack S);
+int stack_is_full(my_stack S);
+
+
+#endif //_MY_STACK_H

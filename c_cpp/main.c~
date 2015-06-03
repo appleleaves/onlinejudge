@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "include/my_stack.h"
+
+int main(void) {
+	my_stack S;
+	int x;
+	S.size=LEN;
+        while ( ! stack_is_full(S) ) {
+		scanf("%d", &x);
+		stack_push(S,x);
+	}
+	
+
+	while ( !stack_is_empty(S) ) {
+		x = stack_pop(S);
+
+		printf("%d\t", x);
+	}
+	printf("\n");
+
+	return 0;
+}
